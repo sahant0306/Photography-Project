@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Capture</title>
+</head>
+<body>
+    <!--nav section-->
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo">
+               <a href="index.html">
+                
+               <span><img src="logo4/Screenshot_20221224_164652.png" alt="logo" class="logo"></span></a>
+               
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>             
+                <li><a href="live.html">Live Streaming</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+
+            
+        </div>
+    </div>
+
+    <!--home section-->
+
+<section class="home">
+     <div class="max-width1">
+        <a href="#c">Explore our awesome collection</a>
+     </div>
+</section>
+
+
+
+
+
+<!--Graduation section-->
+<section class="graduation" id="c">
+    <h2 class="title">Graduation photos</h2>
+    <div class="max-width">
+        <div class="card">
+
+            <a href="logo4/graduation1.jpg " download><img src="logo4/graduation1.jpg" alt="" ></a>
+            <a href="logo4/graduation2.jpeg " download><img src="logo4/graduation2.jpeg" alt=""></a>
+            <a href="logo4/graduation3.jpg " download><img src="logo4/graduation3.jpg" alt=""></a>
+            <!-- <img src="logo4/graduation4.jpg" alt=""> -->
+        </div>
+    </div>
+    <div class="max-width">
+        <div class="card">
+            <a href="logo4/graduation4.jpg " download><img src="logo4/graduation4.jpg" alt=""></a>
+            <a href="logo4/graduation7.jpg " download> <img src="logo4/grsduation7.jpeg" alt=""></a>
+            <a href="logo4/graduation6.jpg " download> <img src="logo4/graduation6.jpg" alt=""></a>
+          
+        </div> 
+
+    </div>
+</section>
+<!-- wedding section -->
+<section class="flower">
+    <h2 class="title">Flowers photos </h2>
+    <div class="max-width">
+        <div class="card">
+            <a href="logo4/flower1.jpg" download><img src="logo4/flower1.jpg" alt=""></a>
+            <a href="logo4/flower2.jpeg" download><img src="logo4/flower2.jpeg" alt=""></a>
+            <a href="logo4/flower3.jpeg" download><img src="logo4/flower3.jpeg" alt=""></a>
+            <!-- <img src="logo4/graduation4.jpg" alt=""> -->
+        </div>
+    </div>
+    <div class="max-width">
+        <div class="card">
+            <a href="logo4/flower4.jpeg" download><img src="logo4/flower4.jpeg" alt=""></a>
+            <a href="logo4/flower6.jpg" download><img src="logo4/flower6.jpg" alt=""></a>
+            <a href="logo4/f5.jpg" download><img src="logo4/f5.jpg" alt=""></a>
+          
+        </div> 
+
+    </div>
+</section>
+<!-- tiger section -->
+<section class="tiger">
+    <h2 class="title">Tiger photos </h2>
+    <div class="max-width">
+        <div class="card">
+            <a href="logo4/tiger1.jpg" download> <img src="logo4/tiger1.jpg" alt=""></a>
+            <a href="logo4/tiger2.jpg" download><img src="logo4/tiger2.jpg" alt=""></a>
+            <a href="logo4/tiger4.jpg" download> <img src="logo4/tiger4.jpg" alt=""></a>
+            
+        </div>
+    </div>
+    <div class="max-width">
+        <div class="card">
+            <a href="logo4/tiger5.jpg" download> <img src="logo4/tiger5.jpg" alt=""></a>
+            <a href="logo4/tiger7.jpg" download> <img src="logo4/tiger7.jpeg" alt=""></a>
+            <a href="logo4/tiger9.jpg" download> <img src="logo4/tiger9.jpeg" alt=""></a>
+          
+        </div> 
+
+    </div>
+</section>
+
+<!--portraits-->
+
+<section class="portraits">
+    <h2 class="title">portraits shoots </h2>
+    <div class="portrait-2">
+        <div class="card">
+            <a href="logo4/portrait(1).jpg" download> <img src="logo4/portrait(1).jpg" alt=""></a>
+            <a href="logo4/portrait(2).jpg" download> <img src="logo4/portrait(2).jpg" alt=""></a>
+            <a href="logo4/portrait(3).jpg" download> <img src="logo4/portrait(3).jpg" alt=""></a>
+            
+        </div>
+    </div>
+    <div class="portrait-2">
+        <div class="card">
+            <a href="logo4/portrait(4).jpg" download>  <img src="logo4/portrait(4).jpg" alt=""></a>
+            <a href="logo4/portrait(5).jpg" download> <img src="logo4/portrait(5).jpg" alt=""></a>
+            <a href="logo4/portrait(6).jpg" download> <img src="logo4/portrait(6).jpg" alt=""></a>
+          
+        </div> 
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+<footer>
+    <span>Designed by <a href="#">CAPTURED</a> copyright &#169; 2022. All rights reserved</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500;1,700&family=Work+Sans:wght@100;200;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;    
+
+}
+
+section{
+    padding: 100px 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* navigation */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: rgb(0, 0, 0); 
+     opacity:0.6; 
+
+}
+.navbar .menu{
+    transition: all 0.4s ease;
+}
+.navbar .sticky{
+    background: #111;
+    padding: 15px 0;
+}
+
+
+.logo{
+    height: 100px;
+    width: 100px;
+    font-family: 'Lora', serif;
+    /* padding: 15px; */
+    /* margin-bottom: 15px; */
+}
+
+.navbar .menu a:hover{
+    font-size: 17px;
+    border: solid;
+    border-color: rgb(244, 240, 232);
+    border-radius: 5px;
+    /* border-bottom-width: 2px; */
+    background-color:white ;
+    color: rgb(0, 0, 0);
+
+}
+.menubtn img{
+    width: 20px;
+    height: 20px;
+    clear: left;
+   
+    
+}
+
+
+
+/* .navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: bisque;
+} */
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 25px ;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+
+}
+.navbar .menu li{
+    display: inline-block;
+
+}
+.max-width{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+
+}
+
+
+.max-width1{
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.home .max-width1 a{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background:black ; 
+    opacity: 0.9;
+    color: white;
+    margin-left: 250px;
+    transition: all .4s ease;
+ }
+ .home .max-width1 a:hover{
+    background: none;
+    border: 2px solid white;
+ }
+
+/* home styling */
+.home{
+    display:flex;
+    background: url(logo4/bg4.jpg) no-repeat center;
+    background-size:cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.home .home-content{
+    font-size: 50px;
+    padding-top: 360px;
+    margin-left: 50px;
+    color: azure;
+    font-weight: 700;
+    text-shadow: black 3px 3px 3px;
+    text-align: left;
+}
+ .menu-btn{
+    display: none;
+ }
+ /* other page styling */
+
+ .home .max-width a{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background:black ; 
+    color: white;
+    margin-left: 250px;
+    transition: all .4s ease;
+ }
+
+ .home .max-width a:hover{
+    background: none;
+    border: 2px solid white;
+ }
+
+.portrait-2 .card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+   
+}
+.portrait-2 .card img{
+    width: 450px;
+    height: 500px;
+    object-fit: cover; 
+    margin: 25px 10px;
+   border-radius: 10px;
+}
+ 
+.portraits{
+    margin: 0 20px;
+}
+
+/* live streaming Styling*/
+.live .card {
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.live .card img{
+    width: 450px;
+    height: 500px;
+    object-fit: cover; 
+    margin: 25px 10px;
+   border-radius: 10px;
+}
+ 
+.portraits{
+    margin: 0 30px;
+}
+
+.live .title::after{
+    content: "Live stream ";
+    position: absolute;
+    background: #111;
+    bottom: -12px;
+    left:50%;
+    color: rgba(180, 136, 78, 0.905);
+    padding: 5px;
+    font-size: 20px;
+    background-color:white;
+    transform: translate(-50%);
+}
+.live .card h3{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.live .card h4{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.live .card h5{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.live .card p{
+    padding: 20px ;
+    font-size: 18px;
+}
+
+.live .card .btn a{
+background: gray;
+padding: 10px 30px;
+border-radius: 30px;
+color: black;
+transition: all 0.4s ease;
+}
+
+.live .card .btn a:hover{
+    background: none;
+    border:2px solid blue;
+    color: black;
+}
+
+/* about styling */
+
+.about .max-width .card img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover; 
+    margin-right: 25px; 
+   border-radius: 15px;
+}
+
+.about .max-width .card .right h3{
+    font-size: 40px;
+    padding-bottom: 10px;
+   }
+   
+   .about .max-width .card .right a{
+    font-size: 20px;
+    padding: 10px;
+    background-color: gray;
+    color: black;
+    border-radius: 30px;
+    margin: 0,20px;
+    transition: all .4s ease;
+   }
+   .about .max-width .card .right a:hover{
+       border: 2px solid blue;
+       background: none;
+       color: black;
+      
+   
+   }
+   
+   .about .max-width .card .right p{
+       margin-bottom: 20px;
+       padding-bottom: 10px;
+   
+   }
+
+   /* contact styling */
+
+   .contact .title::after{
+    content: "contact us";
+    position: absolute;
+    background: #111;
+    bottom: -12px;
+    left:50%;
+    color: rgba(180, 136, 78, 0.905);
+    padding: 5px;
+    font-size: 20px;
+    background-color:white;
+    transform: translate(-50%);
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+.contact .max-width .card .left .address{
+    background: lightgrey;
+    padding: 20px;
+    color:cornflowerblue;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width:400px;
+    align-items: center;
+
+}
+
+.contact .max-width .card .left .address h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact .max-width .card .left .address p{
+    font-size: 18px;
+    font-weight: 600;
+    color:black;
+}
+
+.contact .max-width form{
+    background-color: gray;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.contact .max-width form input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding:6px 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.contact .max-width form textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding:6px 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    resize: none;
+
+}
+/* featured styling */
+.title{
+
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.title::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: #111;
+    bottom: 0px;
+    left:50%;
+    transform: translate(-50%);
+}
+.title::after{
+    content: "featured";
+    position: absolute;
+    background: #111;
+    bottom: -12px;
+    left:50%;
+    color: rgba(180, 136, 78, 0.905);
+    padding: 5px;
+    font-size: 20px;
+    background-color:white;
+    transform: translate(-50%);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+
+}
+.swiper-slide img{
+    width: 100%;
+    border-radius: 15px;
+}
+/* graduation section */
+section .max-width .card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .max-width .card img{
+    width: 450px;
+    height: 250px;
+    object-fit: cover; 
+    margin: 25px 10px;
+   border-radius: 10px;
+}
+
+/* services  */
+.services .title::after{
+    content: "Why Us";
+    position: absolute;
+    background: #111;
+    bottom: -12px;
+    left:50%;
+    color: rgba(180, 136, 78, 0.905);
+    padding: 5px;
+    font-size: 20px;
+    background-color:white;
+    transform: translate(-50%);
+}
+
+.services .max-width .card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+   
+}
+
+.services .max-width .card img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover; 
+    margin-right: 25px; 
+   border-radius: 15px;
+}
+
+
+.services .max-width .card .right h3{
+ font-size: 40px;
+ padding-bottom: 10px;
+}
+
+.services .max-width .card .right a{
+ font-size: 20px;
+ padding: 10px;
+ background-color: rgb(106, 91, 103);
+ color: white;
+ border-radius: 30px;
+ margin: 0,20px;
+ transition: all .4s ease;
+}
+.services .max-width .card .right a:hover{
+    border: 1px black;
+    background: none;
+    color: #111;
+   
+
+}
+
+.services .max-width .card .right p{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+}
+
+/* footer */
+footer{
+    background: #111;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+footer a{
+    color: brown;
+}
